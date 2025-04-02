@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.activity.CodeActivity">
+
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Подтверждение номера"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bold_font"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/medium_font"
+            android:gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Мы выслали 6-ти значный код на ваш номер телефона, введите его в поле ниже"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/codeInputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="13dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold_font"
+            android:gravity="center"
+            android:hint="- - -   - - -"
+            android:textColorHint="@color/black"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Далее"
+            android:padding="13dp"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/green_drawble"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

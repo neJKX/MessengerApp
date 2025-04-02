@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MessengerApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".presenter.activity.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presenter.activity.SecondAuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presenter.activity.MainScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presenter.activity.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presenter.activity.CodeActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="messengerapp-51703.firebaseapp.com"
+                    android:pathPrefix="/__/auth/action"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presenter.activity.AuthorizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presenter.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

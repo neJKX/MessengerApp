@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".presenter.activity.SecondAuthActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/bold_font"
+        android:textColor="@color/black"
+        android:text="Знакомство" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Отлично, мы почти у цели, теперь давай познакомимся."
+        android:textColor="@color/gray"
+        android:fontFamily="@font/medium_font"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_input_drawble"
+        android:hint="Имя"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_input_drawble"
+        android:hint="Фамилия"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/sity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_input_drawble"
+        android:hint="Город"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/citate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_input_drawble"
+        android:hint="Статус"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:padding="13dp"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:background="@drawable/green_drawble"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
